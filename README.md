@@ -1,2 +1,3 @@
 # DSA-LAB-
-Data Structure and Algorithms - Lab problems
+Data Structures and Algorithms - Lab problems and solutions
+CSE Department (1-2), Sylhet Engineering College.

@@ -1,16 +1,16 @@
 # DSA Lab - Data Structures & Algorithms in C
 
-A collection of Data Structures and Algorithms laboratory programs written in **C** for the **Data Structures and Algorithms (CSE 1-2)** course at college.
+A collection of **Data Structures and Algorithms** laboratory programs written in **C** for the **Data Structures and Algorithms (CSE 1-2)** course.
 
-This repository contains implementations of fundamental data structures and algorithms along with organized folders for practice, notes, and future additions.
+This repository contains implementations of fundamental data structures using simple and beginner-friendly C programs. Each topic is organized into separate folders for easy understanding and practice.
 
 ---
 
 # 📌 Repository Overview
 
-The purpose of this repository is to practice and understand the core concepts of Data Structures and Algorithms by implementing every topic from scratch in C.
+This repository was created to practice the core concepts of Data Structures and Algorithms by implementing each topic from scratch in C.
 
-Each program is written separately so that every concept can be studied independently.
+Every program is kept independent so that each concept can be studied and tested separately.
 
 ---
 
@@ -18,123 +18,169 @@ Each program is written separately so that every concept can be studied independ
 
 ### 01. Arrays
 
+Implementation of array operations using **dynamic memory allocation**.
+
 **Concepts Covered**
 
-* Dynamic memory allocation
-* `malloc()`
-* `calloc()`
-* `realloc()`
-* Memory deallocation using `free()`
+- `malloc()`
+- `realloc()`
+- `free()`
+- Array Traversal
+- Insertion
+- Deletion
+- Searching
 
 **Source File**
 
-* `Array_using_dynamic_memory.c`
+- `arrays.c`
+
+---
+
+### 02. Strings
+
+Basic string manipulation without using advanced library functions.
+
+**Operations Included**
+
+- String Length
+- String Copy
+- String Reverse
+
+**Source File**
+
+- `strings.c`
 
 ---
 
 ### 03. Linked List
 
-Implementation of a **Singly Linked List** including:
+Implementation of a **Singly Linked List**.
 
-* Insert node
-* Delete node
-* Display list
+**Operations Included**
+
+- Create List
+- Insert at End
+- Delete Node
+- Display List
 
 **Source File**
 
-* `linked_list.c`
+- `linked_list.c`
 
 ---
 
 ### 04. Stack
 
-Implementation of Stack using arrays.
+Implementation of **Stack using a Singly Linked List**.
 
-Operations included:
+**Operations Included**
 
-* Push
-* Pop
-* Peek
-* Display
-* Stack overflow & underflow checking
+- Push
+- Pop
+- Peek
+- Display
 
 **Source File**
 
-* `stack.c`
+- `stack.c`
 
 ---
 
 ### 05. Queue
 
-Two queue implementations are available.
+Implementation of **Queue using a Singly Linked List**.
 
-**Linear Queue**
+**Operations Included**
 
-* Enqueue
-* Dequeue
-* Display
+- Enqueue
+- Dequeue
+- Peek
+- Display
 
-**Circular Queue**
+**Source File**
 
-* Circular insertion
-* Circular deletion
-* Display
+- `queue.c`
 
-**Source Files**
+---
 
-* `queue.c`
-* `circular_queue.c`
+### 06. Tree
+
+Implementation of a **Binary Tree**.
+
+**Features**
+
+- Create Tree
+- Preorder Traversal
+- Inorder Traversal
+- Postorder Traversal
+
+**Source File**
+
+- `tree.c`
 
 ---
 
 ### 07. Binary Search Tree
 
-Basic Binary Search Tree implementation.
+Implementation of a **Binary Search Tree (BST)**.
 
-Features:
+**Operations Included**
 
-* Insert node
-* Search node
-* Delete node
-* Inorder Traversal
-* Preorder Traversal
-* Postorder Traversal
+- Insert Node
+- Search Node
+- Inorder Traversal
 
 **Source File**
 
-* `binary_search_tree.c`
+- `bst.c`
+
+---
+
+### 08. Heap
+
+Implementation of a **Max Heap**.
+
+**Operations Included**
+
+- Insert
+- Delete Root
+- Display Heap
+
+**Source File**
+
+- `heap.c`
 
 ---
 
 ### 10. Recursion
 
-Recursive solutions for common problems.
+Recursive implementations of common problems.
 
-Programs included:
+**Programs Included**
 
-* Fibonacci Sequence
-* Sum of Series
+- Fibonacci Series
+- Sum of Natural Numbers
 
 **Source Files**
 
-* `fibonacci.c`
-* `sum.c`
+- `fibonacci.c`
+- `sum.c`
 
 ---
 
 ### 12. Searching
 
-Searching techniques implemented in C.
+Searching algorithms implemented in C.
 
-Algorithms:
+**Algorithms**
 
-* Linear Search
-* Binary Search
+- Linear Search
+- Binary Search
 
 **Source Files**
 
-* `linear_search.c`
-* `binary_search.c`
+- `linear_search.c`
+- `binary_search.c`
 
 ---
 
@@ -142,28 +188,28 @@ Algorithms:
 
 The following topics will be added gradually.
 
-* Strings
-* Trees
-* Heap
-* Graph
-* Sorting Algorithms
-* Additional Searching Techniques
+- Graph
+- Sorting Algorithms
+- Additional Tree Algorithms
+- Additional Heap Operations
+- More Searching Techniques
 
 ---
 
 # 📁 Folder Structure
 
 ```text
-DSA-Lab/
+DSA-LAB/
 │
 ├── 01.Arrays/
-│   ├── Array_using_dynamic_memory.c
+│   ├── arrays.c
 │   └── README.md
 │
 ├── 02.Strings/
+│   ├── strings.c
 │   └── README.md
 │
-├── 03.Linked List/
+├── 03.Linked_List/
 │   ├── linked_list.c
 │   └── README.md
 │
@@ -173,17 +219,18 @@ DSA-Lab/
 │
 ├── 05.Queue/
 │   ├── queue.c
-│   ├── circular_queue.c
 │   └── README.md
 │
-├── 06.Trees/
+├── 06.Tree/
+│   ├── tree.c
 │   └── README.md
 │
-├── 07.Binary Search Tree/
-│   ├── binary_search_tree.c
+├── 07.BST/
+│   ├── bst.c
 │   └── README.md
 │
 ├── 08.Heap/
+│   ├── heap.c
 │   └── README.md
 │
 ├── 09.Graph/
@@ -245,11 +292,11 @@ gcc linked_list.c -o linked_list
 ./linked_list
 ```
 
-Example for Binary Search:
+Example for Binary Search Tree:
 
 ```bash
-gcc binary_search.c -o binary_search
-./binary_search
+gcc bst.c -o bst
+./bst
 ```
 
 ---
@@ -258,29 +305,29 @@ gcc binary_search.c -o binary_search
 
 This repository is created to:
 
-* Learn the fundamentals of Data Structures
-* Practice programming in C
-* Improve understanding of pointers and dynamic memory
-* Build problem-solving skills
-* Prepare for laboratory exams and programming assessments
+- Learn the fundamentals of Data Structures and Algorithms
+- Practice programming in C
+- Improve understanding of pointers and dynamic memory allocation
+- Strengthen problem-solving skills
+- Prepare for laboratory classes and programming assessments
 
 ---
 
 # 💻 Requirements
 
-* GCC Compiler (or any C compiler)
-* Basic knowledge of C programming
-* Familiarity with loops, functions, arrays, and pointers
+- GCC Compiler (or any C Compiler)
+- Basic knowledge of C Programming
+- Familiarity with Functions, Arrays, Pointers, and Dynamic Memory Allocation
 
 ---
 
 # 📌 Features
 
-* Simple and beginner-friendly code
-* Separate implementation for every topic
-* Easy-to-understand program structure
-* Organized directory layout
-* Suitable for DSA laboratory practice
+- Beginner-friendly implementations
+- Well-organized folder structure
+- Separate implementation for each topic
+- Dynamic memory allocation where appropriate
+- Suitable for DSA laboratory practice
 
 ---
 
@@ -288,18 +335,18 @@ This repository is created to:
 
 Planned additions include:
 
-* More tree algorithms
-* Graph traversal algorithms
-* Heap implementation
-* Multiple sorting algorithms
-* Advanced searching techniques
-* Additional practice problems
+- More Binary Tree algorithms
+- AVL Tree
+- Graph Traversal (BFS & DFS)
+- Heap Sort
+- Additional Sorting Algorithms
+- More Practice Problems
 
 ---
 
 # 👨‍💻 Author
 
-**Your Name**
+**Sammo Talukdar**
 
 Department of Computer Science & Engineering
 
@@ -309,8 +356,8 @@ Data Structures and Algorithms Laboratory
 
 # 📄 License
 
-This repository is intended solely for educational and learning purposes.
+This repository is intended for educational and learning purposes.
 
 Feel free to explore the programs, study the implementations, and use them for academic practice.
 
-**Last Updated:** 2026
+**Last Updated:** July 2026

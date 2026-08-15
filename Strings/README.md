@@ -2,18 +2,28 @@
 
 ## Description
 
-This program performs a few common string operations using C.
+This folder contains individual C programs demonstrating common string operations.
 
-### Operations
+## Programs
 
-- Find string length
-- Copy one string into another
-- Reverse a string
+- `string_length.c` - Finds the length of a string
+- `string_copy.c` - Copies one string into another
+- `string_concatenation.c` - Joins two strings
+- `string_comparison.c` - Compares two strings
+- `substring_search.c` - Searches for a substring
+- `string_reverse.c` - Reverses a string
+- `palindrome_check.c` - Checks whether a string is a palindrome
 
-### Memory
+## Concepts Used
 
-Dynamic memory allocation is used with `malloc()`.
+- Character arrays
+- Pointers
+- Functions
+- String manipulation
+- Dynamic memory allocation
+- `malloc()`
+- `free()`
 
-### Language
+## Language
 
-C
+C Programming

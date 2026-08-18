@@ -361,14 +361,7 @@ DSA-Lab/
 │   └── README.md
 │
 ├── College Homework/
-│   ├── string_operations.c
-│   └── README.md
-│
-├── Notes/
-│   └── README.md
-│
-├── Practice Problem/
-│   └── README.md
-│
-├── .gitignore
-└── README.md
+   ├── string_operations.c
+   └── README.md
+
+
